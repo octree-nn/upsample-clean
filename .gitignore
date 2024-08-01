@@ -1,0 +1,7 @@
+*.git
+*.vscode
+*.xyz
+__pycache__
+data
+logs
+original_dataset

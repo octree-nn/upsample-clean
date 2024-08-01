@@ -1,0 +1,67 @@
+SOLVER:
+  gpu: 0, 1, 2, 3
+  run: train
+
+  logdir: logs/upsampling-clean
+  max_epoch: 500
+  test_every_epoch: 10
+  log_per_iter: 50
+  ckpt_num: 20
+
+  # optimizer
+  type: adamw
+  weight_decay: 0.05  
+  lr: 0.0005          
+
+  # learning rate
+  lr_type: poly
+  milestones: (160,240)
+
+DATA:
+  train:
+    # octree building
+    depth: 8
+    full_depth: 2
+
+    # data augmentations
+    data_augment: True
+    is_train: True
+    distort: False
+
+    noise_level: (0.01, 0.02)
+    # data loading, reuse the data for autoencoder
+    location: data/train
+    filelist: data/trainlist.txt
+    batch_size: 2
+    shuffle: True
+    num_workers: 4
+
+  test:
+    # octree building
+    depth: 8
+    full_depth: 2
+
+    # no data augmentations
+    data_augment: False
+    is_train: False
+    distort: False
+
+    noise_level: None
+    # data loading
+    location: data/test
+    filelist: data/testlist.txt
+    batch_size: 1
+    shuffle: False
+    num_workers: 4
+
+MODEL:
+  channel_in: 4
+  channel_out: 3
+  channels: [512, 512, 256, 256, 128, 128, 64, 64, 32, 32]
+  feature: LF   
+  depth: 8
+  full_depth: 2
+  resblk_num: 2
+  bottleneck: 2
+  group: 16
+  

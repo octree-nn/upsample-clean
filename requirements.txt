@@ -1,0 +1,8 @@
+ocnn
+numpy
+tqdm
+thsolver
+trimesh
+open3d
+tensorboard
+transforms3d
