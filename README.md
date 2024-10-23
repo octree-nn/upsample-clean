@@ -1,5 +1,11 @@
 # Joint Point Cloud Upsampling and Cleaning with Octree-based CNNs
 
+#### [Paper](https://arxiv.org/abs/2410.17001)
+
+Joint Point Cloud Upsampling and Cleaning with Octree-based CNNs
+Authors: Jihe Li, Bo Pang, Peng-Shuai Wang
+Accepted by Computational Visual Media
+
 ## Installation
 1. Install Conda and create a conda environment.
 
