@@ -1,10 +1,12 @@
 # Joint Point Cloud Upsampling and Cleaning with Octree-based CNNs
 
-#### [Paper](https://arxiv.org/abs/2410.17001)
 
-Joint Point Cloud Upsampling and Cleaning with Octree-based CNNs  
+**[Joint Point Cloud Upsampling and Cleaning with Octree-based CNNs](https://arxiv.org/abs/2410.17001)**  
 Authors: Jihe Li, Bo Pang, Peng-Shuai Wang  
 Accepted by Computational Visual Media 
+
+![teaser](teaser.png)
+
 
 ## Installation
 1. Install Conda and create a conda environment.
@@ -62,3 +64,13 @@ Run the following commands to evaluate the upsampling results using CD, HD, and 
 Run the following commands to evaluate the cleaning results using CD, HD, and P2F. The `resolution` includes `10k` and `50k`, and the `noise level` includes `1`, `2`, `25`.
 
     python evaluate.py --outputdir=logs/upsample-clean/model_outputs/cleaning/<resolution>/noise_<noise level> --dataset=PUNet_<resolution>
+
+## Citation
+   ```bibtex
+    @article{li2024joint,
+    title={Joint Point Cloud Upsampling and Cleaning with Octree-based CNNs},
+    author={Li, Jihe and Pang, Bo and Wang, Peng-Shuai},
+    journal={arXiv preprint arXiv:2410.17001},
+    year={2024}
+    }
+   ```
