@@ -1,7 +1,7 @@
 # Joint Point Cloud Upsampling and Cleaning with Octree-based CNNs
 
 
-**[Joint Point Cloud Upsampling and Cleaning with Octree-based CNNs](https://arxiv.org/abs/2410.17001)**  
+**[Joint Point Cloud Upsampling and Cleaning with Octree-based CNNs](https://ieeexplore.ieee.org/document/11429526)**  
 Authors: Jihe Li, Bo Pang, Peng-Shuai Wang  
 Accepted by Computational Visual Media 
 
@@ -68,9 +68,13 @@ Run the following commands to evaluate the cleaning results using CD, HD, and P2
 ## Citation
    ```bibtex
     @article{li2024joint,
-    title={Joint Point Cloud Upsampling and Cleaning with Octree-based CNNs},
-    author={Li, Jihe and Pang, Bo and Wang, Peng-Shuai},
-    journal={arXiv preprint arXiv:2410.17001},
-    year={2024}
+      title={Joint Point Cloud Upsampling and Cleaning with Octree-Based CNNs},
+      author={Li, Jihe and Pang, Bo and Wang, Peng-Shuai},
+      journal={Computational Visual Media}, 
+      year={2026},
+      volume={12},
+      number={2},
+      pages={305-319},
+      doi={10.26599/CVM.2025.9450465}
     }
    ```
